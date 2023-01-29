@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.headerSwiper', {
   effect: "flip",
   grabCursor: true,
   navigation: {
@@ -7,3 +7,8 @@ const swiper = new Swiper('.swiper', {
   },
 })
 
+const largeSwiper = new Swiper('.largeSwiper', {
+  watchSlidesProgress: true,
+  slidesPerView: 4,
+  slidesPerGroup: 1,
+});
