@@ -12,3 +12,4 @@ const largeSwiper = new Swiper('.largeSwiper', {
   slidesPerView: 4,
   slidesPerGroup: 1,
 });
+
