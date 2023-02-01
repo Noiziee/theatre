@@ -191,28 +191,26 @@ body {
   cursor: pointer;
 }
 
+/* .swiper-wrapper {}
 
-/* .swiper-wrapper {} */
+.swiper-slide {} */
 
-/* .swiper-slide {} */
 
 /* .swiper__image {} */
 
-.swiper-button-left {
-  position: absolute;
-  bottom: -35px;
-
+.swiper-button-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
 }
+
+/* .swiper-button-left {} */
 
 .swiper-button-left span {
   margin-left: 25px;
 }
 
-.swiper-button-right {
-  position: absolute;
-  bottom: -35px;
-  right: 20px;
-}
+/* .swiper-button-right {} */
 
 .swiper-button-right span {
   display: inline-block;
@@ -236,14 +234,13 @@ body {
 /* .sidebar__inner {} */
 
 .sidebar__list {
-  position: absolute;
-  bottom: 85px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 30px;
+  min-height: 100vh;
+  padding-bottom: 85px;
 }
 
 .sidebar__item-info {
@@ -527,7 +524,9 @@ svg:hover {
   display: flex;
 }
 
-
+.contacts__col {
+  position: relative;
+}
 
 
 .form__input {
@@ -586,13 +585,14 @@ svg:hover {
 .contacts__info {
   font-family: 'OpenSans-Regular', sans-serif;
   font-weight: 400;
-  max-width: 396px;
+  width: 390px;
   margin: 0 auto;
   font-size: 12px;
   color: #989898;
-  position: relative;
-  top: -47px;
-  left: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+
 }
 
 /* footer */

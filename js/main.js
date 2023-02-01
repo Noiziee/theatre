@@ -1,5 +1,4 @@
 const swiper = new Swiper('.headerSwiper', {
-  effect: "flip",
   grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-right',
