@@ -213,6 +213,10 @@ body {
   margin-left: 25px;
 }
 
+.swiper-button-right {
+  margin-right: 21px;
+}
+
 .swiper-button-right span {
   display: inline-block;
   margin-right: 25px;
@@ -290,7 +294,6 @@ body {
 
 .title span {
   color: #D1A954;
-  margin-right: 15px;
 }
 
 /* about */
@@ -454,8 +457,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 128px 95px 126px 190px;
   gap: 100px;
+  min-height: 550px;
   position: relative;
   z-index: 1;
 }
@@ -471,8 +474,12 @@ body {
   color: #D1A954;
 }
 
+.rating__col-stars {
+  margin-bottom: 25px;
+}
 
 .rating__col-text {
+  max-width: 388px;
   font-size: 36px;
 }
 
@@ -522,6 +529,7 @@ body {
 
 .contacts__row-form {
   display: flex;
+
 }
 
 .contacts__col {
@@ -641,6 +649,14 @@ body {
   .headerSwiper {
     display: none;
   }
+
+  .partners__box-image:nth-child(8) {
+    display: none;
+  }
+
+  .partners__box-image:nth-child(7) {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {}
@@ -653,6 +669,18 @@ body {
   .header__nav-inner,
   .header__row {
     padding-left: 33px;
+  }
+
+  .about__col-image {
+    display: none;
+  }
+
+  .rating__col-text {
+    font-size: 34px;
+  }
+
+  .rating__row {
+    gap: 58px;
   }
 }
 
@@ -762,9 +790,27 @@ body {
   }
 }
 
+@media (max-width: 810px) {
+  .partners__box-image:nth-child(6) {
+    display: none;
+  }
+
+  .partners__box-image:nth-child(5) {
+    display: none;
+  }
+}
+
 @media (max-width: 760px) {
   .header__row {
     display: block;
+  }
+
+  .rating__col-text {
+    font-size: 29px;
+  }
+
+  .rating__row {
+    gap: 24px;
   }
 }
 
@@ -775,8 +821,49 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .about__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about__col-mw {
+    flex-basis: 100%;
+  }
+
+  .about__content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .rating__col-text {
+    font-size: 25px;
+  }
+
+  .rating__row {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .partners__box {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 440px) {
   .header__title {
+    font-size: 44px;
+  }
+
+  .header__phone-link {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .partners__title {
+    margin-bottom: 30px;
     font-size: 44px;
   }
 }

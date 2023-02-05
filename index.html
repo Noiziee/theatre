@@ -18,7 +18,7 @@
       <div class="container">
         <div class="header__nav-inner">
           <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
+            <input id="menu__toggle" type="checkbox" style="display: none" />
             <label class="menu__btn" for="menu__toggle">
               <span></span>
             </label>
@@ -111,7 +111,7 @@
         </ul>
       </div>
     </aside>
-    <!-- <main class="main">
+    <main class="main">
       <section id="about" class="about">
         <div class="container">
           <div class="about__inner">
@@ -138,17 +138,19 @@
                 <div class="about__col-title">
                   немного о цифрах
                 </div>
-                <div class="about__col-armchair">
-                  <img class="armchair__image" src="./images/about/armchair.svg" alt="armchair">
-                  <div class="about__col-seating">
-                    <span>1600</span> посадочный мест
+                <div class="about__content">
+                  <div class="about__col-armchair">
+                    <img class="armchair__image" src="./images/about/armchair.svg" alt="armchair">
+                    <div class="about__col-seating">
+                      <span>1600</span>посадочный мест
+                    </div>
                   </div>
-                </div>
-                <div class="about__col-theater">
-                  <img class="theater__image" src="./images/about/theater.svg" alt="theater">
-                </div>
-                <div class="about__col-stories">
-                  <span>350</span> лет истории
+                  <div class="about__col-theater">
+                    <img class="theater__image" src="./images/about/theater.svg" alt="theater">
+                    <div class="about__col-stories">
+                      <span>350</span> лет истории
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="about__col">
@@ -158,7 +160,7 @@
           </div>
         </div>
       </section>
-      <section id="installations" class="installations">
+      <!-- <section id="installations" class="installations">
         <div class="large-container">
           <div class="installations__inner">
             <div class="installations__title title">
@@ -218,7 +220,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="rating">
         <div class="container">
           <div class="rating__inner">
@@ -264,20 +266,22 @@
             <h2 class="contacts__title title"><span>стать</span> меценатом</h2>
 
             <div class="contacts__row">
-              <ul class="contacts__list">
-                <li class="contacts__list-item">
-                  <a class="contacts__list-link" href="tel:+78121234555">+7 (812) 123-45-55</a>
-                </li>
-                <li class="contacts__list-item">
-                  <a class="contacts__list-link" href="tel:+78121234555">+7 (812) 123-45-55</a>
-                </li>
-                <li class="contacts__list-item">
-                  <a class="contacts__list-link" href="mailto:info@theater.ru">info@theater.ru</a>
-                </li>
-                <li class="contacts__list-item">
-                  <a class="contacts__list-link" href="#">г. санкт-петербург, невский 140</a>
-                </li>
-              </ul>
+              <div class="contacts__col">
+                <ul class="contacts__list">
+                  <li class="contacts__list-item">
+                    <a class="contacts__list-link" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                  </li>
+                  <li class="contacts__list-item">
+                    <a class="contacts__list-link" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                  </li>
+                  <li class="contacts__list-item">
+                    <a class="contacts__list-link" href="mailto:info@theater.ru">info@theater.ru</a>
+                  </li>
+                  <li class="contacts__list-item">
+                    <a class="contacts__list-link" href="#">г. санкт-петербург, невский 140</a>
+                  </li>
+                </ul>
+              </div>
               <div class="contacts__col">
                 <form method="post" action="#">
                   <input class="form__input" type="text" name="name" placeholder="Имя" required>
@@ -289,7 +293,6 @@
                     персональные данные согласно законку ФЗ-52.
                   </div>
                 </form>
-
               </div>
               <div class="contacts__col">
                 <form method="post" action="#">
@@ -309,7 +312,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__copy">
           <p class="footer__copy-text">(с) Все права защищены. Большой театр. 2020</p>
