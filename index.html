@@ -260,54 +260,46 @@
           </div>
         </div>
       </section>
-      <section id="contacts" class="contacts">
+      <section class="contacts">
         <div class="container">
           <div class="contacts__inner">
-            <h2 class="contacts__title title"><span>стать</span> меценатом</h2>
-
+            <div class="contacts__title title"><span>стать</span> меценатом</div>
             <div class="contacts__row">
               <div class="contacts__col">
-                <ul class="contacts__list">
-                  <li class="contacts__list-item">
-                    <a class="contacts__list-link" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                <ul class="contacts-list">
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__item-phone" href="tel:+78121234555">+7 (812) 123-45-55</a>
                   </li>
-                  <li class="contacts__list-item">
-                    <a class="contacts__list-link" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__item-phone" href="tel:+7812234566">+7 (812) 123-45-66</a>
                   </li>
-                  <li class="contacts__list-item">
-                    <a class="contacts__list-link" href="mailto:info@theater.ru">info@theater.ru</a>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__item-email" href="mailto:info@theater.ru">info@theater.ru</a>
                   </li>
-                  <li class="contacts__list-item">
-                    <a class="contacts__list-link" href="#">г. санкт-петербург, невский 140</a>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__item-address" href="#">г. санкт-петербург, невский 140</a>
                   </li>
                 </ul>
               </div>
               <div class="contacts__col">
-                <form method="post" action="#">
-                  <input class="form__input" type="text" name="name" placeholder="Имя" required>
-                  <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
-                  <div class="contacts__info">
+                <form class="form" action="#" method="get">
+                  <input class="form__input" type="text" name="name" placeholder="Имя">
+                  <input class="form__input" type="tel" name="phone" placeholder="Телефон">
+                  <input class="form__input" type="text" name="company" placeholder="Компания">
+                  <input class="form__input" type="email" name="email" placeholder="E-mail">
+                  <p class="contacts__text">
                     * Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем,
                     и
                     защищаем
                     персональные данные согласно законку ФЗ-52.
-                  </div>
+                  </p>
                 </form>
               </div>
               <div class="contacts__col">
-                <form method="post" action="#">
-                  <input class="form__input" type="text" name="company" placeholder="Компания" required>
-                  <input class="form__input" type="email" name="mail" placeholder="E-mail" required>
-                </form>
-              </div>
-              <div class="contacts__col">
-                <form method="post" action="#">
-                  <textarea class="form__textarea" name="message" placeholder="Сообщение "></textarea>
-                  <button class="form__button btn" type="submit">отправить</button>
-                </form>
+                <textarea class="form__textarea" name="message" placeholder="Сообщение"></textarea>
+                <button class="contacts__button btn" type="submit">отправить</button>
               </div>
             </div>
-
           </div>
         </div>
       </section>
