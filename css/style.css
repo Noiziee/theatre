@@ -844,6 +844,15 @@ body {
     font-size: 35px;
     line-height: 1.2;
   }
+
+  .partners__inner,
+  .about__inner {
+    padding: 65px 0;
+  }
+
+  .installations__inner {
+    margin-bottom: 65px;
+  }
 }
 
 @media (max-width: 810px) {
